@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria de fotos encoded</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<!-- MUSICA -->
+<audio id="musica" autoplay loop playsinline>
+  <source src="https://www.dropbox.com/scl/fi/yhqgkyqfnffbjp1yvsf6b/Hotel-California_spotdown.org.mp3?rlkey=gurex1vyustj6yxlcewaqc23t&raw=1" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById("musica");
+
+  window.addEventListener("load", () => {
+    audio.play().catch(() => {});
+  });
+
+  document.addEventListener("touchstart", () => {
+    audio.play();
+  }, { once: true });
+
+  document.addEventListener("click", () => {
+    audio.play();
+  }, { once: true });
+</script>
+
+<div class="Container">
+
+  <div class="Picture">
+    <img class="Picture-img" src="https://i.imgur.com/VLevKj6.jpeg" alt="Foto" />
+    <div class="Picture-note"><span>Nosotros en Ceprevi </span></div>
+  </div>
+
+  <div class="Picture">
+    <img class="Picture-img" src="https://i.imgur.com/leIOYaZ.jpeg" alt="Foto" />
+    <div class="Picture-note"><span>Nosotros en Barranco </span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="https://i.imgur.com/KyZTr1K.jpeg" alt="Foto" />
+    <div class="Picture-note"><span>Nosotros en Megaplaza</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="https://i.imgur.com/qbWGut2.jpeg" alt="Foto" />
+    <div class="Picture-note"><span>Nosotros en el Parque Neptuno</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="https://i.imgur.com/SwZmxIq.jpeg" alt="Foto" />
+    <div class="Picture-note"><span>Nosotros en Royal Plaza</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="https://i.imgur.com/Au5Lipm.jpeg" alt="Foto" />
+    <div class="Picture-note"><span>Nosotros en mi cumpleaños</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="https://i.imgur.com/QGuRIb9.jpeg" alt="Foto" />
+    <div class="Picture-note"><span>Nosotros bajo el sol</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="https://i.imgur.com/z12xrfh.jpeg" alt="Foto" />
+    <div class="Picture-note"><span>Nosotros en el cine</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="https://i.imgur.com/PJnezaB.jpeg" alt="Foto" />
+    <div class="Picture-note"><span>Nosotros escuchando música</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="https://i.imgur.com/LxUz5CP.jpeg" alt="Foto" />
+    <div class="Picture-note"><span>Nosotros en Centro Cívico</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="https://i.imgur.com/tPorGib.jpeg" alt="Foto" />
+    <div class="Picture-note"><span>Tu <3 </span></div>
+  </div>
+</div>
+ 
+ </div>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
